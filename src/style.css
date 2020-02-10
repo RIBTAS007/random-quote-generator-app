@@ -1,0 +1,56 @@
+
+.text-colr{
+  color : orange;
+}
+
+.thickborder{
+    border-radius: 10px;
+    border-color:orange;
+    border-width: 10px;
+    border-style:solid;
+  
+  }
+
+.bck {
+    background-image: url("http://wallpapercave.com/wp/pCmhqeU.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grow:hover { transform: scale(1.1); }
+.button:hover{
+    background-color: orange; 
+    
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:  underline ;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.tex{
+  background-color:#00000f;
+  color: #ffffff;
+   
+ text-overflow: ellipsis;
+ text-align: center;
+ font-weight: bold;
+ font-size:50px;
+}
+.b{
+  background-color: orange;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:  underline ;
+    display: inline-block;
+    font-size: 30px;
+}
+.page_footer
+{
+clear:both;
+text-align:center;
+   bottom: 0px;
+  width: 100%;
+ color:white; 
+}
