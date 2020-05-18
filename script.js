@@ -14,7 +14,7 @@ var quote = [
 'Success is not final, failure is not fatal: it is the courage to continue that counts. -Winston Churchill ',
 'Do all things with love. -Og Mandino '];
 
-/*
+
                                           function tweet(message) {
                                             window.open('https://twitter.com/intent/tweet?hashtags= freecodecamp&text='+encodeURIComponent( message));
                                           }
@@ -40,7 +40,7 @@ var quote = [
                                             tweet($(msg).text()); 
                                             //tweet(msg);
                                           }
-                                          */
+                                          
 var currentQuote = quote[0];
 function setRandomQuote() {
   currentQuote = quote[Math.floor(Math.random() * quote.length)];
