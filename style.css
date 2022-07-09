@@ -1,55 +1,96 @@
-.text-colr{
-  color : orange;
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
 }
 
-.thickborder{
-    border-radius: 10px;
-    border-color:orange;
-    border-width: 10px;
-    border-style:solid;
-  
-  }
-
-.bck {
-    background-image: url("http://wallpapercave.com/wp/pCmhqeU.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.grow:hover { transform: scale(1.1); }
-.button:hover{
-    background-color: orange; 
-    
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration:  underline ;
-    display: inline-block;
-    font-size: 30px;
+html {
+  scroll-behavior: smooth;
 }
 
-.tex{
-  background-color:#00000f;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url("bgdark.webp");
+}
+
+.text-colr {
+  color: orange;
+}
+
+.heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.heading h1:hover {
+  color: white;
+  text-shadow: -2px -2px 0 orange, 2px -2px 0 orange, -2px 2px 0 orange,
+    2px 2px 0 orange;
+}
+
+.button {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: darkorange;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  opacity: 1;
+}
+
+
+.tex {
+  background-color: black;
   color: #ffffff;
-   
- text-overflow: ellipsis;
- text-align: center;
- font-weight: bold;
- font-size:50px;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
 }
-.b{
+
+.form-control {
+  border-style: none;
+  padding: 5%;
+}
+
+.quotes {
+  margin: 50px;
+  /* border-style:solid; */
+  box-shadow: orange 0px 3px 8px;
+}
+
+.b {
   background-color: orange;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration:  underline ;
-    display: inline-block;
-    font-size: 30px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
 }
-.page_footer
-{
-clear:both;
-text-align:center;
-   bottom: 0px;
+
+.page_footer {
+  clear: both;
+  text-align: center;
+  bottom: 0px;
   width: 100%;
- color:white; 
+  color: white;
+}
+
+.grow {
+  /* background-color: blueviolet; */
+  text-align: center;
+  margin-bottom: 10px;
 }
