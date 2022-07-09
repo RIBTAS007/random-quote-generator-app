@@ -15,33 +15,31 @@ var quote = [
 'Do all things with love. -Og Mandino '];
 
 
-                                          function tweet(message) {
-                                            window.open('https://twitter.com/intent/tweet?hashtags= freecodecamp&text='+encodeURIComponent( message));
-                                          }
+function tweet(message) {
+  window.open('https://twitter.com/intent/tweet?hashtags= freecodecamp&text='+encodeURIComponent( message));
+}
                                           
-                                          var msg;
+var msg;
                                           
                                           
-                                          $(document).ready(function() {
-                                            $("#getMessage").on("click", function(){
-                                              var randomquote = Math.floor(Math.random()*(quote.length-1));
-                                              msg = quote[randomquote];
-                                              $(".message").html(msg);
-                                            });
-                                            $("#tweetMessage").on("click", tweetHandler);
-                                             $("button").addClass("animated bounce");
-                                             $("#comment").addClass("animated bounce");
-                                             $(".jumbotron").addClass("animated bounce");
-                                             $("body").addClass("animated hing");
+$(document).ready(function() {
+    $("#getMessage").on("click", function(){
+        var randomquote = Math.floor(Math.random()*(quote.length-1));
+        msg = quote[randomquote];
+        $(".message").html(msg);
+    });
+    $("#tweetMessage").on("click", tweetHandler);
+    $(".jumbotron").addClass("animated bounceInLeft");
+    $(".quotes").addClass("animated bounceInRight");
+});
                                           
-                                          });
-                                          
-                                          function tweetHandler() {
-                                            tweet($(msg).text()); 
-                                            //tweet(msg);
-                                          }
+function tweetHandler() {
+    tweet($(msg).text()); 
+    //tweet(msg);
+}
                                           
 var currentQuote = quote[0];
+
 function setRandomQuote() {
   currentQuote = quote[Math.floor(Math.random() * quote.length)];
 
@@ -53,11 +51,4 @@ $(function () {
   $('#randomQuote').click(function () {
     setRandomQuote();
   });
-});
-
-$(document).ready(function () {
-  $("button").addClass("animated bounce");
-  $("#comment").addClass("animated bounce");
-  $(".jumbotron").addClass("animated bounce");
-  $("body").addClass("animated rollIn");
 });
